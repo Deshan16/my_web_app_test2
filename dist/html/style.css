@@ -64,6 +64,7 @@ text {
     margin-right: auto;
     overflow-x: hidden;
     overflow-x: hidden;
+    padding-top: 35px;
 }
 
 html::-webkit-scrollbar {
