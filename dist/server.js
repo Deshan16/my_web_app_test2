@@ -7,8 +7,9 @@ const express_1 = __importDefault(require("express"));
 const path_1 = __importDefault(require("path"));
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
+app.use(express_1.default.static(path_1.default.join(__dirname, "html")));
 app.get("/", (_request, response) => {
-    response.send("<h1>Backend is running</h1>");
+    response.sendFile(path_1.default.join(__dirname, "html", "file1.html"));
 });
 app.get("/page/:name", (request, response) => {
     const file = request.params.name;
