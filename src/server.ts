@@ -4,8 +4,10 @@ import Path from "path";
 const app = Express();
 const PORT = process.env.PORT || 3000;
 
+app.use(Express.static(Path.join(__dirname, "html")));
+
 app.get("/", (_request: Request, response: Response) => {
-    response.send("<h1>Backend is running</h1>");
+    response.sendFile(Path.join(__dirname, "html", "file1.html"));
 });
 
 app.get("/page/:name", (request: Request, response: Response) => {

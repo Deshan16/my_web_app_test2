@@ -3,80 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>සමීකරණ එකතුව</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <style>
-        .nav-bar {
-            position: fixed;
-            top: 5px;
-            left: 5px;
-            width: 100%;
-            background: #222;
-            overflow-x: auto;
-            overflow-y: hidden;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .nav-bar::-webkit-scrollbar { display: none; }
-
-        .nav-items a {
-            color: #fff;
-            text-decoration: none;
-            display: inline-block;
-            padding: 3px 5px;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-
-        .section {
-            display: flex;
-            flex-direction: row;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-
-        .def {
-            margin-left: 25px;
-        }
-
-        svg {
-            color: #e0e0e0;
-        }
-
-        text {
-            fill: #e0e0e0;
-        }
-
-        .title {
-            text-decoration: underline;
-        }
-
-        .selected {
-            background-color: rgb(42, 130, 165);
-        }
-        
-        .container {
-            margin-top: 20px;
-            flex: 1;
-            overflow-y: auto;
-            overflow-x: hidden;
-            width: 100%;
-            height: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        html::-webkit-scrollbar {
-            display: none; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="nav-bar">
